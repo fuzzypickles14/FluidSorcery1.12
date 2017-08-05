@@ -1,8 +1,7 @@
-package com.fuzzpickles14.fluidsorcery;
+package com.fuzzypickles14.fluidsorcery;
 
-import com.fuzzpickles14.fluidsorcery.core.proxy.CommonProxy;
-import com.fuzzpickles14.fluidsorcery.lib.LibModDetails;
-import net.minecraft.init.Blocks;
+import com.fuzzypickles14.fluidsorcery.core.proxy.CommonProxy;
+import com.fuzzypickles14.fluidsorcery.lib.LibModDetails;
 import net.minecraftforge.fluids.FluidRegistry;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;

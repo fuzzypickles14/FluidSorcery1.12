@@ -1,4 +1,4 @@
-package com.fuzzpickles14.fluidsorcery.lib;
+package com.fuzzypickles14.fluidsorcery.lib;
 
 /**
  * Created by Andrew Toomey on 7/11/2017.

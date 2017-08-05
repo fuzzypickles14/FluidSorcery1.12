@@ -1,4 +1,4 @@
-package com.fuzzpickles14.fluidsorcery.crafting;
+package com.fuzzypickles14.fluidsorcery.crafting;
 
 /**
  * Created by Andrew Toomey on 7/11/2017.
