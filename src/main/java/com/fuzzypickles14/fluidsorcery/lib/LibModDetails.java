@@ -11,4 +11,5 @@ public class LibModDetails {
 
     public static final String CLIENT_PROXY = "com.fuzzypickles14.fluidsorcery.core.proxy.ClientProxy";
     public static final String COMMON_PROXY = "com.fuzzypickles14.fluidsorcery.core.proxy.CommonProxy";
+    public static final String FLUID_MODEL_PATH = MODID + ":fluid";
 }

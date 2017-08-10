@@ -1,0 +1,36 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "model": "forge:fluid"
+  },
+  "variants": {
+    "scorch": [
+      {
+        "custom": {
+          "fluid": "scorch"
+        }
+      }
+    ],
+    "aer": [
+      {
+        "custom": {
+          "fluid": "aer"
+        }
+      }
+    ],
+    "terre": [
+      {
+        "custom": {
+          "fluid": "terre"
+        }
+      }
+    ],
+    "mist": [
+      {
+        "custom": {
+          "fluid": "mist"
+        }
+      }
+    ]
+  }
+}

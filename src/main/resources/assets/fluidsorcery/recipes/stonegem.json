@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "fluidsorcery:stonegem"
+        },
+        {
+            "item": "fluidsorcery:stonegem"
+        },
+        {
+             "item": "fluidsorcery:stonegem"
+        },
+        {
+             "item": "fluidsorcery:stonegem"
+        }
+
+    ],
+    "result": {
+        "item": "minecraft:cobblestone"
+    }
+}
