@@ -32,7 +32,7 @@ public class ModBlockFluid extends BlockFluidFinite {
         {
             StoneGem gem = (StoneGem) ((EntityItem)entityIn).getItem().getItem();
             if ( gem.getCookTime(((EntityItem)entityIn).getItem(), worldIn) - worldIn.getTotalWorldTime() > 0) {
-                worldIn.spawnParticle(EnumParticleTypes.SMOKE_LARGE, entityIn.posX, entityIn.posY, entityIn.posZ, 0, 1, 0);
+                worldIn.spawnParticle(EnumParticleTypes.SMOKE_NORMAL, entityIn.posX, pos.getY() + 1, entityIn.posZ, 0, 0, 0);
             }
             else
             {
