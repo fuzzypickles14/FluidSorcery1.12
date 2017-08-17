@@ -1,19 +1,15 @@
-package com.fuzzypickles14.fluidsorcery.items.items;
+package com.fuzzypickles14.fluidsorcery.items.items.Gems;
 
-import com.fuzzypickles14.fluidsorcery.items.ModItem;
-import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.world.World;
 
-import java.util.ArrayList;
-
 /**
  * Created by Andrew Toomey on 8/9/2017.
  */
-public class StoneGem extends ModItem {
+public class StoneGem extends BaseGem {
 
     private static int COOK_TIME = 100;
 

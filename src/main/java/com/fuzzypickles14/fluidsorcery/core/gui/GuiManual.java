@@ -37,9 +37,14 @@ public class GuiManual extends GuiScreen {
     public void initGui()
     {
         guiWidth = (this.width - this.ImageWidth) / 2;
-        this.buttonList.add(new ChapterButton(1, guiWidth, 50, 40, 5,"Chapter 1", 40));
-        this.buttonList.add(new ChapterButton(2, guiWidth, 70, 40, 5,"Chapter 2", 40));
-        this.buttonList.add(new ChapterButton(3, guiWidth, 90, 40, 5,"Chapter 3", 40));
+        int buttonId = 1;
+        int yPosition = 50;
+        for (ManualChapter chapter : chapters)
+        {
+            this.buttonList.add(new ChapterButton(buttonId, guiWidth, yPosition, 40, 5,String.format("Chapter %d", buttonId), 40));
+            yPosition += 20;
+            buttonId++;
+        }
     }
 
     @Override

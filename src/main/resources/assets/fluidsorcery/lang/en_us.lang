@@ -4,3 +4,7 @@ fluid.mist=Mist
 fluid.terre=Terre
 fluid.aer=Aer
 item.stonegem.name=Stone Gem
+item.airgem.name=Aer Gem
+item.firegem.name=Scorch Gem
+item.earthgem.name=Terre Gem
+item.watergem.name=Mist Gem

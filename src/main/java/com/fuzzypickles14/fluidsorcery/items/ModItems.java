@@ -1,16 +1,14 @@
 package com.fuzzypickles14.fluidsorcery.items;
 
+import com.fuzzypickles14.fluidsorcery.items.items.Gems.*;
 import com.fuzzypickles14.fluidsorcery.items.items.ItemManual;
-import com.fuzzypickles14.fluidsorcery.items.items.StoneGem;
 import com.fuzzypickles14.fluidsorcery.lib.LibModDetails;
-import net.minecraft.client.renderer.block.model.ModelBakery;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
-import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.registries.IForgeRegistry;
 
 import java.util.HashSet;
@@ -24,6 +22,13 @@ public class ModItems {
     private static Set<Item> items = new HashSet<>();
     static Item itemManual =  new ItemManual("itemmanual");
     public static Item stoneGem = new StoneGem("stonegem");
+    public static Item fireGem = new FireGem("firegem");
+    public static Item waterGem = new WaterGem("watergem");
+    public static Item earthGem = new EarthGem("earthgem");
+    public static Item airGem = new AirGem("airgem");
+
+
+
     private static IForgeRegistry<Item> itemIForgeRegistry;
 
 
@@ -36,6 +41,10 @@ public class ModItems {
             itemIForgeRegistry = event.getRegistry();
             registerAndAdd(itemManual);
             registerAndAdd(stoneGem);
+            registerAndAdd(fireGem);
+            registerAndAdd(waterGem);
+            registerAndAdd(earthGem);
+            registerAndAdd(airGem);
             registerRenders();
         }
     }
