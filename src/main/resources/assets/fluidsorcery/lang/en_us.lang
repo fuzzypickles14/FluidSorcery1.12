@@ -8,3 +8,7 @@ item.airgem.name=Aer Gem
 item.firegem.name=Scorch Gem
 item.earthgem.name=Terre Gem
 item.watergem.name=Mist Gem
+effect.fluidsorcery:fireattunement=Scorch Attunement
+effect.fluidsorcery:waterattunement=Mist Attunement
+effect.fluidsorcery:earthattunement=Terre Attunement
+effect.fluidsorcery:airattunement=Aer Attunement

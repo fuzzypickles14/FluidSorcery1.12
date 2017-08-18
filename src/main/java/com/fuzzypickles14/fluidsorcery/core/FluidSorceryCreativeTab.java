@@ -1,5 +1,6 @@
 package com.fuzzypickles14.fluidsorcery.core;
 
+import com.fuzzypickles14.fluidsorcery.items.ModItems;
 import com.fuzzypickles14.fluidsorcery.lib.LibModDetails;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Items;
@@ -18,6 +19,6 @@ public class FluidSorceryCreativeTab extends CreativeTabs {
 
     @Override
     public ItemStack getTabIconItem() {
-        return new ItemStack(Items.APPLE);
+        return new ItemStack(ModItems.itemManual);
     }
 }

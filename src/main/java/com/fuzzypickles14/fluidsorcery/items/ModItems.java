@@ -20,7 +20,7 @@ import java.util.Set;
 public class ModItems {
 
     private static Set<Item> items = new HashSet<>();
-    static Item itemManual =  new ItemManual("itemmanual");
+    public static Item itemManual =  new ItemManual("itemmanual");
     public static Item stoneGem = new StoneGem("stonegem");
     public static Item fireGem = new FireGem("firegem");
     public static Item waterGem = new WaterGem("watergem");
