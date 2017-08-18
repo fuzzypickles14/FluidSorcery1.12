@@ -11,6 +11,6 @@ import net.minecraft.potion.Potion;
 public class WaterGem extends BaseGem {
     public WaterGem(String unlocalizedName) {
         super(unlocalizedName);
-        this.attunement = new WaterAttunement(false, MapColor.BLUE.colorValue);
+        this.attunement = new WaterAttunement(false, MapColor.BLUE.colorValue, "waterattunement");
     }
 }

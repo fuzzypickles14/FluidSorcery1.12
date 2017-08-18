@@ -9,6 +9,6 @@ import net.minecraft.block.material.MapColor;
 public class EarthGem extends BaseGem {
     public EarthGem(String unlocalizedName) {
         super(unlocalizedName);
-        this.attunement = new EarthAttunement(false, MapColor.GREEN.colorValue);
+        this.attunement = new EarthAttunement(false, MapColor.GREEN.colorValue, "earthattunement");
     }
 }

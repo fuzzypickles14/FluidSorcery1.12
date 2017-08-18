@@ -25,13 +25,17 @@ public class BaseGem extends ModItem {
 
     @Override
     public ActionResult<ItemStack> onItemRightClick(World worldIn, EntityPlayer playerIn, EnumHand handIn) {
-        PotionEffect effect = new BaseAttunement(attunement);
-        for (PotionEffect potion : playerIn.getActivePotionEffects()) {
-            if (potion instanceof BaseAttunement) {
-                playerIn.removePotionEffect(potion.getPotion());
+        if (attunement != null) {
+            PotionEffect effect = new BaseAttunement(attunement);
+            for (PotionEffect potion : playerIn.getActivePotionEffects()) {
+                if (potion instanceof BaseAttunement) {
+                    playerIn.removePotionEffect(potion.getPotion());
+                }
             }
+            playerIn.addPotionEffect(effect);
+            return new ActionResult<ItemStack>(EnumActionResult.PASS, new ItemStack(this));
+        } else {
+            return super.onItemRightClick(worldIn, playerIn, handIn);
         }
-        playerIn.addPotionEffect(effect);
-        return new ActionResult<ItemStack>(EnumActionResult.PASS, new ItemStack(this));
     }
 }

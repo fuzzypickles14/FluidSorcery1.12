@@ -6,10 +6,8 @@ import net.minecraft.potion.Potion;
 /**
  * Created by Andrew Toomey on 8/17/2017.
  */
-public class AirAttunement extends Potion {
-    public AirAttunement(boolean isBadEffectIn, int liquidColorIn) {
-        super(isBadEffectIn, liquidColorIn);
-        this.setRegistryName(LibModDetails.MODID, "airAttunement");
-        this.setPotionName("effect." + this.getRegistryName().toString());
+public class AirAttunement extends ModPotion {
+    public AirAttunement(boolean isBadEffectIn, int liquidColorIn, String name) {
+        super(isBadEffectIn, liquidColorIn, name);
     }
 }

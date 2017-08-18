@@ -10,6 +10,6 @@ import net.minecraft.block.material.MapColor;
 public class FireGem extends BaseGem {
     public FireGem(String unlocalizedName) {
         super(unlocalizedName);
-        this.attunement = new FireAttunement(false, MapColor.RED.colorValue);
+        this.attunement = new FireAttunement(false, MapColor.RED.colorValue, "fireattunement");
     }
 }

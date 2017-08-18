@@ -10,6 +10,6 @@ import net.minecraft.potion.Potion;
 public class AirGem extends BaseGem {
     public AirGem(String unlocalizedName) {
         super(unlocalizedName);
-        this.attunement = new AirAttunement(false, MapColor.YELLOW.colorValue);
+        this.attunement = new AirAttunement(false, MapColor.YELLOW.colorValue, "airattunement");
     }
 }
