@@ -23,15 +23,17 @@ import java.util.Random;
  */
 public class ModBlockFluid extends BlockFluidFinite {
     private Item cookingResultItem;
+    private Item failedCookingResultItem;
 
     public ModBlockFluid(Fluid fluid, Material material) {
         super(fluid, material);
         cookingResultItem = Item.getItemFromBlock(Blocks.COBBLESTONE);
     }
 
-    public ModBlockFluid(Fluid fluid, Material material, Item item) {
+    public ModBlockFluid(Fluid fluid, Material material, Item cookingResultItem, Item failedCookingResultItem) {
         super(fluid, material);
-        cookingResultItem = item;
+        this.cookingResultItem = cookingResultItem;
+        this.failedCookingResultItem = failedCookingResultItem;
         setDefaultState(blockState.getBaseState().withProperty(LEVEL, 7));
     }
 
@@ -47,7 +49,26 @@ public class ModBlockFluid extends BlockFluidFinite {
             }
             else
             {
-                ((EntityItem) entityIn).setItem(new ItemStack(cookingResultItem, ((EntityItem)entityIn).getItem().getCount()));
+                int itemCount =  ((EntityItem)entityIn).getItem().getCount();
+                int passNum = 0;
+                int failNum = 0;
+                int chance = 0;
+                for (int i = 0; i < itemCount; i++)
+                {
+                    chance = RANDOM.nextInt(10) + 1;
+                    if (chance <=4)
+                    {
+                        passNum++;
+                    }
+                    else
+                    {
+                        failNum++;
+                    }
+                }
+                ItemStack passDrop = new ItemStack(cookingResultItem, passNum);
+                ItemStack failDrop = new ItemStack(failedCookingResultItem, failNum);
+                ((EntityItem) entityIn).setItem(passDrop);
+                worldIn.spawnEntity(new EntityItem(worldIn, entityIn.posX, entityIn.posY, entityIn.posZ, failDrop));
             }
         }
     }

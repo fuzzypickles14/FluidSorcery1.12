@@ -26,6 +26,10 @@ public class ModItems {
     public static Item waterGem = new WaterGem("watergem");
     public static Item earthGem = new EarthGem("earthgem");
     public static Item airGem = new AirGem("airgem");
+    public static Item fireDust = new ModItem("firedust");
+    public static Item waterDust = new ModItem("waterdust");
+    public static Item earthDust = new ModItem("earthdust");
+    public static Item airDust = new ModItem("airdust");
 
 
 
@@ -45,6 +49,10 @@ public class ModItems {
             registerAndAdd(waterGem);
             registerAndAdd(earthGem);
             registerAndAdd(airGem);
+            registerAndAdd(fireDust);
+            registerAndAdd(waterDust);
+            registerAndAdd(earthDust);
+            registerAndAdd(airDust);
             registerRenders();
         }
     }

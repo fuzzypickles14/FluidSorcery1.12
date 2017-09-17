@@ -4,6 +4,7 @@ import com.fuzzypickles14.fluidsorcery.blocks.ModBlock;
 import com.fuzzypickles14.fluidsorcery.core.FluidSorceryCreativeTab;
 import com.fuzzypickles14.fluidsorcery.core.proxy.ClientProxy;
 import com.fuzzypickles14.fluidsorcery.fluid.blockfluids.ModBlockFluid;
+import com.fuzzypickles14.fluidsorcery.items.ModItem;
 import com.fuzzypickles14.fluidsorcery.items.ModItems;
 import com.fuzzypickles14.fluidsorcery.lib.LibModDetails;
 import com.google.common.base.Preconditions;
@@ -45,10 +46,10 @@ public class ModFluids {
     public static final ModFluid TERRE = new ModFluid("terre", new ResourceLocation(texturePrefix + "terre" + "Still"), new ResourceLocation(texturePrefix + "terre" + "Still"));
 
     public static void init() {
-        registerFluidBlock(SCORCH, new ModBlockFluid(SCORCH, new MaterialLiquid(MapColor.RED), ModItems.fireGem), "scorch");
-        registerFluidBlock(AER, new ModBlockFluid(AER, new MaterialLiquid(MapColor.YELLOW), ModItems.airGem), "aer");
-        registerFluidBlock(MIST, new ModBlockFluid(MIST, new MaterialLiquid(MapColor.LIGHT_BLUE), ModItems.waterGem), "mist");
-        registerFluidBlock(TERRE, new ModBlockFluid(TERRE, new MaterialLiquid(MapColor.GREEN), ModItems.earthGem), "terre");
+        registerFluidBlock(SCORCH, new ModBlockFluid(SCORCH, new MaterialLiquid(MapColor.RED), ModItems.fireGem, ModItems.fireDust), "scorch");
+        registerFluidBlock(AER, new ModBlockFluid(AER, new MaterialLiquid(MapColor.YELLOW), ModItems.airGem, ModItems.airDust), "aer");
+        registerFluidBlock(MIST, new ModBlockFluid(MIST, new MaterialLiquid(MapColor.LIGHT_BLUE), ModItems.waterGem, ModItems.waterDust), "mist");
+        registerFluidBlock(TERRE, new ModBlockFluid(TERRE, new MaterialLiquid(MapColor.GREEN), ModItems.earthGem, ModItems.earthDust), "terre");
     }
 
 
